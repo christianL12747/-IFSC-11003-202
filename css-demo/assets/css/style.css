@@ -26,8 +26,16 @@ html {
 body{
     font-family: "Lato", sans-serif;
 }
-body{
-    background-color: aquamarine;
+{
+/* Longform */
+padding-top:40px;
+padding-right:40px;
+padding-bottom:40px;
+padding-left:40px;
+/* T/R/B/L */
+padding: 40px 40px 20px 40px;
+/* T/B | L/R */
+padding: 20x 40px;
 }
 Header.primary p.subtitle{
 font-size: 1.3rem;
