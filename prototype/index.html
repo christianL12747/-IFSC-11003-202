@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My first web document</title>
+  <meta charset="utf-8" />
+  <!-- Sets responsive scaling -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Descriptive call to action / overview of site purpose" />
+  <meta name="author" content="Thomas Wallace" />
+</head>
+
+<body>
+  <div id="access-tools">
+    <a href="#content">Skip to Content</a>
+  </div>
+  <main>
+    <header class="primary">
+      <h1>Prototype HTML Document Example</h1>
+    </header>
+    <section id="content">
+      <h2>Properly Marking up an HTML Document</h2>
+      <nav class="primary">
+        <ul>
+          <li><a href="https://ualr.edu#footer" target="_blank">Absolute Link</a></li>
+          <li><a href="pages/about.html">Relative Link</a></li>
+          <li><a href="#demo">Anchor Link</a></li>
+          <li><a href="mailto:email@domain.com">Email Link</a></li>
+        </ul>
+      </nav>
+
+      <!--Form-->
+
+      <form action="processing-script.php" method="post">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="fname">Full Name:</label>
+          <input type="text" id="fname" name="fname" />
+
+          <label for="address">Address:</label>
+          <textarea id="address" name="address"></textarea>
+
+          <label for="color">Favorite Color:</label>
+          <select id="color" name="color">
+            <option value="r">Red</option>
+            <option value="g">Green</option>
+            <option value="b">Blue</option>
+            <option selected>---</option>
+          </select>
+          <input type="submit" value="Take me to your leader" />
+        </fieldset>
+      </form>
+      <table border="1">
+        <caption>Grocery List</caption>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Cost</th>
+        </tr>
+        <tr>
+          <td>Ramen</td>
+          <td>12</td>
+          <td>.45</td>
+        </tr>
+        <tr>
+          <td>Ramen</td>
+          <td>12</td>
+          <td>.45</td>
+        </tr>
+        <tr>
+          <td>Ramen</td>
+          <td>12</td>
+          <td>.45</td>
+        </tr>
+      </table>
+      <p>This is a paragraph. Often times designers will use <q>Dummy Text</q> as a placeholder in a document. An example of that text follows...<del>Lorem ipsum dolor</del>sit amet, consectetuer adipiscing elit. <mark>Praesent</mark> volutpat velit sed massa. In <em>volutpat eros sagittis ipsum</em>. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, <strong>posuere in</strong>, porta vitae, lorem. Quisque feugiat arcu eget sapien.<sup><a href="#footer">1</a></sup></p>
+
+      <figure>
+        <img src="https://thomaswallace.net/wp-content/uploads/2018/02/ualr.png" alt="UA Little Rock Logo" />
+        <figcaption>Caption</figcaption>
+      </figure>
+      <hr />
+
+      <address>
+        Thomas Wallace <br />
+        123 Street<br />
+        Little Rock, AR, 72207
+      </address>
+
+      <p>This is another paragraph Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis. </p>
+
+      <article>
+        <header>
+          <h2>Title</h2>
+        </header>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus temporibus dolorum ipsa a doloribus exercitationem maiores reiciendis sed aliquam natus. Aliquam adipisci odit soluta saepe?</p>
+        <footer>Footer</footer>
+      </article>
+
+      <h3>This is a Subsection of the Primary Content</h3>
+
+      <p>This is a paragraph. Often times designers will use "Dummy Text" as a placeholder in a document. An example of that text follows...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque feugiat arcu eget sapien.</p>
+
+      <p>This is another paragraph Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis.</p>
+
+      <ol>
+        <li>Instruction 1</li>
+        <li>Instruction 2</li>
+        <li>Instruction 3</li>
+      </ol>
+
+      <p>Video</p>
+
+      <ol start="4">
+        <li>Instruction 1</li>
+        <li>Instruction 2</li>
+        <li>Instruction 3</li>
+      </ol>
+
+      <ul>
+        <li>Pony</li>
+        <li>Turtle</li>
+        <li>Dog</li>
+        <li>Cat</li>
+      </ul>
+
+      <dl>
+        <dt>Term</dt>
+        <dd>Description 1</dd>
+        <dd>Description 2</dd>
+        <dt>Term</dt>
+        <dd>Description 1</dd>
+        <dt>Term</dt>
+        <dd>Description 1</dd>
+        <dd>Description 2</dd>
+        <dd>Description 3</dd>
+      </dl>
+
+      <h4>This is a Subsection of Subsection I</h4>
+
+      <blockquote>
+        This is a Quote. Content precedes design. Design in the absence of content is not design, it's decoration. <cite>From Designing with Web Standards by Jeffery Zeldman.</cite></blockquote>
+
+      <h3>This is a Subsection of the Primary Content</h3>
+
+      <p>This is a paragraph. Often times designers will use "Dummy Text" as a placeholder in a document. An example of that text follows...Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent volutpat velit sed massa. In volutpat eros sagittis ipsum. Donec fringilla risus nec nunc. Fusce tellus arcu, blandit quis, posuere in, porta vitae, lorem. Quisque feugiat arcu eget sapien.</p>
+
+      <p id="demo">This is another paragraph Aenean eget ipsum id arcu bibendum porttitor. Vivamus id lectus non eros eleifend aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris volutpat. Integer dignissim consequat enim. Praesent velit felis, tempus malesuada, sagittis et, condimentum in, ante. Nulla lobortis, ligula sit amet laoreet sollicitudin, sem arcu lacinia tellus, id lobortis arcu urna tincidunt turpis.</p>
+    </section>
+    <div id="footer">
+      <p>&copy; 2026 Thomas Wallace | <a href="#top">Back to Top</a></p>
+    </div>
+  </main>
+</body>
+
+</html>
