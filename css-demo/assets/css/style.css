@@ -1,0 +1,31 @@
+/* ---------------Box Sizing----------------- 
+*/color scheme:primary
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+ 
+ 
+/* Skip link utility: hidden until focused */
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+body{
+    background-color: aquamarine;
+}
