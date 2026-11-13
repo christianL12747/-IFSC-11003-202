@@ -26,6 +26,8 @@ html {
 body{
     font-family: "Lato", sans-serif;
 }
+
+
 header.primary{
     background-color:#3b6b8b;
     color:#ffffff;
@@ -34,21 +36,28 @@ header.primary{
     padding:40px;
 }
 
-Header.primary p.subtitle{
-font-size: 1.3rem;
-font-weight: bold;
-/* top | 1/r | Bottom */
-margin: 10px 0 20px;
-letter-spacing: -1px;
+
+header.primary a {
+  color:#ffffff;
+  text-decoration;none;
+}
+header.primary h1{
+  font=size: 2.6rem;
+  margin:0;
 }
 
-nav.primary ul{
-    background:red;
-    padding: 0;
+
+
+header.primary p.subtitle{
+  font=size:1.3rem;
+  font-weight:bold;
+  margin:10px 0 20px;
+  letter-spacing: -1px;
 }
+
+
+nav.primary ul{background:red}
 nav.primary ul li{
-    background: green;
-    list-style-type: none;
-}
-nav.primary ul li a{    
-}
+  background:green;
+  list-style-type:none;}
+nav.primary ul li a{}
