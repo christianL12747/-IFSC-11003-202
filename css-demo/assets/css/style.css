@@ -58,6 +58,30 @@ header.primary p.subtitle{
 
 nav.primary ul{background:red}
 nav.primary ul li{
-  background:green;
-  list-style-type:none;}
-nav.primary ul li a{}
+  list-style-type:none;
+  flex: 1;
+}
+nav.primary ul li a{
+  list-style-type:none;
+}
+nav.primary ul li a{
+  backgroundclor:rgba(0,0,0,.4);
+  padding: 5px 7.5px;
+  display:block;
+  border: 1px solid #000;
+  border-radius: 8px;
+}
+
+nav.primary ul li a:hover{
+  background-color:rgba(0,0,0,8);
+}
+
+/* ---------------Media Queries----------------- */
+@media screen and (max-width:500px){
+}
+
+nav.primary ul{
+  flex-direction:column;
+  gap:10px;
+}
+
