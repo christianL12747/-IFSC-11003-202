@@ -32,9 +32,26 @@ img{
   margin:40px auto;
 }
 
-  
+.img-right{
+  float:right;
+  border:1p solid #c0c0c0;
+  padding: 5px;
+  margin: 10px 0 10px 20px;
+}
 
+.img-left{
+  float:left;
+  border:1p solid #c0c0c0;
+  padding: 5px;
+  margin: 10px 20px 10px 0;
+}
 
+.imag-center{
+  display:block;
+  margin:20px auto;
+  border:1px solid #c0c0c0;
+  padding: 5px;
+}
   /* ---------------Global Styles----------------- */
 
 body{
@@ -48,7 +65,17 @@ header.primary{
     text-align:center;
     text-shadow:1px 1px #000000;
     padding:40px;
-}
+    /* Longform */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /* T/R/B/L */
+    padding: 40px 40px 20px 40px;
+    /* T/B | L/R */
+    padding: 20px 40px;
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill=' %239C92AC' fill-opacity='0.6'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
 
 header.primary a {
@@ -79,7 +106,7 @@ nav.primary ul li a{
   list-style-type:none;
 }
 nav.primary ul li a{
-  backgroundclor:rgba(0,0,0,.4);
+  background-color:rgba(0,0,0,.4);
   padding: 5px 7.5px;
   display:block;
   border: 1px solid #000;
@@ -117,6 +144,12 @@ nav.primary ul{
   justify-content:space-between;
   flex-wrap: wrap;
   gap:20px;
+  padding-bottom:40px;
+  margin-bottom:40px;
+  border-bottom: 4px double #ccc;
+  padding-top:40px;
+  margin-top:40px;
+  border-top: 4px double #ccc;
 }
 #blog figure{
   margin:0;
@@ -129,18 +162,146 @@ nav.primary ul{
   flex:1;
 }
 
+#blog figure{
+  margin:0;
+}
+#blog .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.6);
+  padding:10px;
+  font-size:.8rem;
+  flex:1;
+}
+
 #blog h2{
   flex: 0 0 100%;
 }
-#blog time.post-date{
+
+#blog time.post-date, #blog figcaption{
   text-transform:uppercase;
   font-size:.6rem;
 }
 
-.container {
-  width:90vw;
+#blog a {
+  color:3B638B;
 }
 
-#blog {
-  flex-direction:column;
+#pratice h2{
+  color: #3b638b;
+  border-bottom:1px dotted #cccccc;
+}
+#pratice h3{
+  border-left: 7.5px solid #3b638b;
+  padding:5px 0 5px 10px;
+}
+
+#pratice a:link, #pratice a:visited {
+  color: #3b638b;
+}
+
+#pratice {
+  line-height:1.6;
+}
+
+#pratice table{
+  border:1px solid #cccccc;
+  width: 100px;
+  border-collapse:collapse;
+}
+#pratice caption{
+  font-weight: bold;
+  margin: 10px;
+  font-size:1.3rem;
+}
+#pratice th{
+  background-color: #172635;
+  color:#ffffff;
+  padding:7.5px;
+}
+
+#pratice tr:nth-child(3n + 2){
+    background-color: rgba (0, 0, 0, 0.1);
+  }
+
+  #pratice tr:hover{
+    background-color: rgba(0, 0, 0, 0.3)
+  }
+
+  #pratice td:nth-child(n+2){
+    text-align:right;
+  }
+
+#pratice td{
+border:1px solid #cccccc;
+padding:5px;
+}
+
+#pratice ol{
+  list-style-type:lower-roman;
+}
+
+#pratice ul ul li:nth-child(2){
+  color:red;
+}
+
+#pratice dt{
+  font-weight:bold;
+
+}
+#pratice dd{
+  margin:0;
+}
+
+
+dd + dt{
+  margin-top:20px;
+}
+
+#pratice blockquote{
+  border: 4px double #c0c0c0;
+  padding:20px 40px;
+  margin:40px 80px;
+  border-radius:30px 0;
+  background-color: #3b638b;
+  color:#fff;
+  text-shadow:1px 1px #000;
+}
+
+#pratice blockquote cite{
+  display:block;
+  text-align:right;
+  margin-top:20px;
+  font-size:.7rem;
+}
+
+
+aside[aria-label="sidebar"]{
+  background-color: #172635;
+  color:#ffffff;
+  padding:20px;
+}
+
+aside div.container a:last-child{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:40px;
+}
+
+aside div.container a{
+  color:#ffffff;
+  display:block;
+  margin-top:10px;
+  text-align:right;
+}
+
+aside .widget footer{
+  display:none;
+}
+
+footer.primary{
+  background-color: #3b638b;
+  padding:5px;
+  color:#ffffff;
+  text-align:center;
+  text-shadow:1px 1px #000000;
 }
